@@ -82,6 +82,13 @@ func main() {
 	}
 }
 ```
+How to run
+```bash
+ONNXRUNTIME_LIB_PATH=ONNX_LIBRARY_PATH go run main.go
+# example 
+# ONNXRUNTIME_LIB_PATH=/usr/local/lib/libonnxruntime.so.1.20.1 go run main.go
+```
+
 Output:
 ```bash
 Object 0: bus x1:23.23 y1:229.70 x2:802.13 y2:802.13 Confidence:0.915536
