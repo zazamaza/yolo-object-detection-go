@@ -4,7 +4,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/Gass-AI/yolo-object-detection-go/internal/utils"
+	"github.com/zazamaza/yolo-object-detection-go/internal/utils"
 )
 
 func TestPostProcess(t *testing.T) {
