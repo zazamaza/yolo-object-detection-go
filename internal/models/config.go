@@ -27,7 +27,7 @@ func NewYOLOConfiguration() YOLOConfiguration {
 	configuration.InputShape = []int64{1, 3, 640, 640}
 	configuration.OutputShape = []int64{1, 7, 8400}
 	configuration.Classes = []string{
-		"Head", "Enemy", "Flashed"
+		"Head", "Enemy", "Flashed",
 	}
 	configuration.Version = YOLOv11
 
