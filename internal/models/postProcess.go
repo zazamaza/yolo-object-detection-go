@@ -4,7 +4,7 @@ import (
 	"image"
 	"math"
 
-	"github.com/Gass-AI/yolo-object-detection-go/internal/utils"
+	"github.com/zazamaza/yolo-object-detection-go/internal/utils"
 )
 
 type YOLOPostProcess struct {
