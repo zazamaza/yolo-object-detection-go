@@ -3,7 +3,7 @@ package model
 import (
 	"testing"
 
-	"github.com/Gass-AI/yolo-object-detection-go/internal/utils"
+	"github.com/zazamaza/yolo-object-detection-go/internal/utils"
 )
 
 func TestYOLOv10PostProcess_PostProcess(t *testing.T) {
