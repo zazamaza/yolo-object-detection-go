@@ -13,7 +13,7 @@ func TestNewYOLOConfiguration(t *testing.T) {
 		InputShape:  []int64{1, 3, 640, 640},
 		OutputShape: []int64{1, 7, 8400},
 		Classes: []string{
-			"Head", "Enemy", "Flashed"
+			"Head", "Enemy", "Flashed",
 		},
 		Version: YOLOv11,
 	}
