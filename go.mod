@@ -1,4 +1,4 @@
-module github.com/Gass-AI/yolo-object-detection-go
+module github.com/zazamaza/yolo-object-detection-go
 
 go 1.23.1
 
