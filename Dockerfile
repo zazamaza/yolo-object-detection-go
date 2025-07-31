@@ -1,6 +1,6 @@
 FROM ubuntu:24.04 AS build
 
-LABEL maintainer="GassAI"
+LABEL maintainer="zazamaza"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
