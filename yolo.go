@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"image"
 
-	engine "github.com/Gass-AI/yolo-object-detection-go/internal/engine"
-	models "github.com/Gass-AI/yolo-object-detection-go/internal/models"
-	"github.com/Gass-AI/yolo-object-detection-go/internal/utils"
+	engine "github.com/zazamaza/yolo-object-detection-go/internal/engine"
+	models "github.com/zazamaza/yolo-object-detection-go/internal/models"
+	"github.com/zazamaza/yolo-object-detection-go/internal/utils"
 )
 
 type YOLO struct {
