@@ -8,7 +8,7 @@ import (
 	_ "image/png"
 	"os"
 
-	yolo "github.com/Gass-AI/yolo-object-detection-go"
+	yolo "github.com/zazamaza/yolo-object-detection-go"
 )
 
 func loadImageFile(filePath string) (image.Image, error) {
