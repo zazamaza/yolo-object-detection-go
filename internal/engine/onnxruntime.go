@@ -63,7 +63,7 @@ func (e *ONNXRuntime) setupExecutionProvider(options *ort.SessionOptions, provid
 	case CoreML:
 		return options.AppendExecutionProviderCoreML(0)
 	case CPU:
-		return nil
+		return options.AppendExecutionProviderDirectML(0)
 
 	default:
 		return fmt.Errorf("unsupported execution provider: %v", provider)
