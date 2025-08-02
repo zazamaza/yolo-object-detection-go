@@ -10,7 +10,7 @@ func TestNewYOLOConfiguration(t *testing.T) {
 		ModelPath:   "model.onnx",
 		InputName:   "images",
 		OutputName:  "output0",
-		InputShape:  []int64{1, 3, 640, 640},
+		InputShape:  []int64{1, 3, 320, 320},
 		OutputShape: []int64{1, 7, 8400},
 		Classes: []string{
 			"Head", "Enemy", "Flashed",
