@@ -63,7 +63,17 @@ func (e *ONNXRuntime) setupExecutionProvider(options *ort.SessionOptions, provid
 	case CoreML:
 		return options.AppendExecutionProviderCoreML(0)
 	case CPU:
-		return options.AppendExecutionProviderDirectML(0)
+		cudaOptions, err := ort.NewCUDAProviderOptions()
+		if err != nil {
+			return fmt.Errorf("error creating CUDA options: %w", err)
+		}
+		defer cudaOptions.Destroy()
+
+		if err := cudaOptions.Update(map[string]string{"device_id": "0"}); err != nil {
+			return fmt.Errorf("error updating CUDA options: %w", err)
+		}
+
+		return options.AppendExecutionProviderCUDA(cudaOptions)
 
 	default:
 		return fmt.Errorf("unsupported execution provider: %v", provider)
