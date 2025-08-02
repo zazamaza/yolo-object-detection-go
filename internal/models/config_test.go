@@ -11,7 +11,7 @@ func TestNewYOLOConfiguration(t *testing.T) {
 		InputName:   "images",
 		OutputName:  "output0",
 		InputShape:  []int64{1, 3, 320, 320},
-		OutputShape: []int64{1, 7, 8400},
+		OutputShape: []int64{1, 7, 2100},
 		Classes: []string{
 			"Head", "Enemy", "Flashed",
 		},
