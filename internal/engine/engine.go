@@ -10,10 +10,10 @@ type IEngine interface {
 type ExecutionProvider int
 
 const (
-	CPU ExecutionProvider = iota
+	CPU 
 	CUDA
 	OpenVINO
 	TensorRT
-	DirectML
+	DirectML ExecutionProvider = iota
 	CoreML
 )
